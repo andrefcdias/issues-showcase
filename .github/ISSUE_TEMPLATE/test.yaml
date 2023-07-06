@@ -1,0 +1,10 @@
+name: "Create with template"
+description: Use this template be the cooles.
+title: "[Template test] <your title>"
+body:
+  - type: input
+    id: fancy_title
+    attributes:
+      label: Write random text
+    validations:
+      required: true
