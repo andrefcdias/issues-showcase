@@ -1,0 +1,106 @@
+---
+name: Long form
+description: File a bug report monalisa/smile
+title: "Big form: "
+labels: ["bug", "triage", "form"]
+body:
+  - type: input
+    attributes:
+      label: I'm not a required input
+      description: And this is my description
+      placeholder: ex. anything or nothing
+  - type: input
+    attributes:
+      label: I'm a required input
+      description: And this is my description
+      placeholder: ex. anything
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: I'm not a required textarea
+      description: And this is my description
+      placeholder: ex. anything
+  - type: textarea
+    attributes:
+      label: I'm a required textarea
+      description: And this is my description
+      placeholder: ex. anything
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        I'm not a required markdown
+  - type: markdown
+    attributes:
+      value: |
+        I'm a required markdown
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: I'm not a required single select
+      description: And this is my description
+      options:
+        - Option 1
+        - Option 2
+  - type: dropdown
+    attributes:
+      label: I'm a required single select
+      description: And this is my description
+      options:
+        - Option 1
+        - Option 2
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: I'm not a required multi select
+      multiple: true
+      options:
+        - Option 1
+        - Option 2
+        - Option 3
+        - Option 4
+        - Option 5
+  - type: dropdown
+    attributes:
+      label: I'm a required multi select
+      multiple: true
+      options:
+        - Option 1
+        - Option 2
+        - Option 3
+        - Option 4
+        - Option 5
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: I'm a group of not required checkboxes
+      description: And this is my description
+      options:
+        - label: Checkbox 1
+        - label: Checkbox 2
+        - label: Checkbox 3
+  - type: checkboxes
+    attributes:
+      label: I'm a group with some required checkboxes
+      description: And this is my description
+      options:
+        - label: Checkbox 1
+          required: true
+        - label: Checkbox 2
+        - label: Checkbox 3
+  - type: checkboxes
+    attributes:
+      label: I'm a required group of checkboxes
+      description: And this is my description
+      options:
+        - label: Checkbox 1
+        - label: Checkbox 2
+        - label: Checkbox 3
+    validations:
+      required: true
+
