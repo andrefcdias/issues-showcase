@@ -2,7 +2,7 @@
 name: Long form
 description: File a bug report monalisa/smile
 title: "Big form: "
-labels: ["bug", "triage", "form"]
+labels: ["test"]
 body:
   - type: input
     attributes:
